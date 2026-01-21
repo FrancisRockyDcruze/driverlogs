@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Logs</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-20">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <div class="text-xl font-bold">MyBrand</div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#" data-page="home" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        Home
+        </a>
+        <a href="#" data-page="feature" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        Feature
+        </a>
+        <a href="#" data-page="pricing" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        Pricing
+        </a>
+        <a href="#" data-page="about" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        About
+        </a>
+        <a href="#" data-page="support" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        Support
+        </a>
+        <a href="#" data-page="contact" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        Contact
+        </a>
+        <a href="#" data-page="paynow" class="nav-link relative text-gray-600 hover:text-gray-900 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-0 after:bg-gray-900 after:transition-all">
+        PAYNOW
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-gray-600">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <a href="#" data-page="home" class="block px-6 py-3 border-b text-gray-700">Home</a>
+      <!-- <a href="#feature" class="block px-6 py-3 border-b text-gray-700">Features</a>
+      <a href="#pricing" class="block px-6 py-3 border-b text-gray-700">Pricing</a> -->
+      <a href="#" data-page="about" class="block px-6 py-3 border-b text-gray-700">About</a>
+      <!-- <a href="#support" class="block px-6 py-3 border-b text-gray-700">Support</a>
+      <a href="#contact" class="block px-6 py-3 text-gray-700">Contact</a>
+      <a href="#paynow" class="block px-6 py-3 text-gray-700">PAY NOW</a> -->
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-24">
+    <div id="app">
+        <!-- Page content loads here -->
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+        <!-- Close button -->
+        <button onclick="closeImage()" class="absolute top-6 right-6 text-white text-3xl font-bold z-50">
+            ✕
+        </button>
+
+        <!-- Image -->
+        <img id="modalImage" class="w-[95vw] h-[95vh] object-contain rounded shadow-lg transform scale-90 transition-transform duration-500">
+
+    </div>
+  </main>
+</body>
+<script src="js/zoom.js"></script>
+<script src="js/script3.js"></script>
+
+</html>
